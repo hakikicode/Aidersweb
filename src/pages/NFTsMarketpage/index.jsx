@@ -1,110 +1,145 @@
 import React from "react";
 
-import { Button, Img, Input, Line, Text } from "components";
+import { Button, Img, Line, List, Text } from "components";
+import Comp from "components/Comp";
 import Footer from "components/Footer";
-
-import { CloseSVG } from "../../assets/images";
+import Header1 from "components/Header1";
+import NFTsMarketPageColumnThirtyNine from "components/NFTsMarketPageColumnThirtyNine";
+import NFTsMarketPageColumnone from "components/NFTsMarketPageColumnone";
+import NFTsMarketPageColumnrectangle131 from "components/NFTsMarketPageColumnrectangle131";
 
 const NFTsMarketpagePage = () => {
-  const [componentsixvalue, setComponentsixvalue] = React.useState("");
+  const nfTsMarketPageColumnrectangle131PropList = [
+    {},
+    { username: "PepeRock" },
+    { username: "Tokens NFT" },
+    { username: "BlackRock" },
+    { username: "Pasta Alpha" },
+    { username: "The Phantom" },
+    { username: "Mutant Ape" },
+    { username: "Milady Maker" },
+    { username: "Other Coder" },
+    { username: "Stack Legends" },
+    { username: "The Beacon" },
+    { username: "Famacy Siri" },
+  ];
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col font-ubuntu items-start justify-start mx-auto w-full">
-        <div className="flex flex-col items-center w-full">
-          <div className="bg-white-A700_01 flex flex-col items-center justify-end p-[9px] w-full">
-            <div className="flex flex-col justify-start max-w-[1248px] mt-[31px] mx-auto md:px-5 w-full">
-              <div className="flex md:flex-col flex-row md:gap-12 items-end justify-between w-full">
-                <div className="flex md:flex-1 flex-row gap-2 items-center justify-start md:mt-0 mt-[13px] w-[18%] md:w-full">
-                  <Img
-                    className="h-[74px] w-[74px]"
-                    src="images/img_frame434.svg"
-                    alt="frame434"
-                  />
-                  <Text
-                    className="text-4xl sm:text-[32px] md:text-[34px] text-blue_gray-800 uppercase"
-                    size="txtUbuntuBold36"
-                  >
-                    aiders
-                  </Text>
-                </div>
-                <div className="flex md:flex-1 md:flex-col flex-row md:gap-10 items-start justify-between mb-[5px] w-4/5 md:w-full">
-                  <Input
-                    name="componentSix"
-                    placeholder="Search for anything here"
-                    value={componentsixvalue}
-                    onChange={(e) => setComponentsixvalue(e)}
-                    className="font-medium font-sofiasans p-0 placeholder:text-gray-600 sm:px-5 text-[17px] text-gray-600 text-left tracking-[0.09px] w-full"
-                    wrapClassName="bg-white-A700_87 border border-gray-900_87 border-solid flex mb-8 px-[22px] py-[7px] rounded-[25px] md:w-full"
-                    suffix={
-                      componentsixvalue?.length > 0 ? (
-                        <CloseSVG
-                          className="cursor-pointer h-9 ml-[35px] my-auto"
-                          onClick={() => setComponentsixvalue("")}
-                          fillColor="#6d6d6d"
-                          height={36}
-                          width={36}
-                          viewBox="0 0 36 36"
-                        />
-                      ) : (
-                        <Img
-                          className="cursor-pointer h-9 ml-[35px] my-auto"
-                          src="images/img_search.svg"
-                          alt="search"
-                        />
+      <div className="bg-white-A700 flex flex-col font-ubuntu items-center justify-start mx-auto w-full">
+        <Header1 className="bg-white-A700_01 flex md:flex-col flex-row md:gap-5 items-center justify-center md:px-5 w-full" />
+        <div className="flex flex-col md:gap-10 gap-16 items-start justify-start max-w-[1240px] mt-36 mx-auto md:px-5 w-full">
+          <div className="flex flex-col md:gap-10 gap-16 items-start justify-start w-auto md:w-full">
+            <div className="flex flex-col md:gap-10 gap-16 items-start justify-start w-auto md:w-full">
+              <div className="flex flex-col gap-10 items-start justify-start w-auto md:w-full">
+                <Text
+                  className="capitalize md:text-3xl sm:text-[28px] text-[32px] text-blue_gray-800 tracking-[0.16px] w-auto"
+                  size="txtUbuntuMedium32"
+                >
+                  NFTs Listings
+                </Text>
+                <div className="flex flex-col items-end justify-start w-auto md:w-full">
+                  <div className="gap-24 md:gap-5 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
+                    {nfTsMarketPageColumnrectangle131PropList.map(
+                      (props, index) => (
+                        <React.Fragment
+                          key={`NFTsMarketPageColumnrectangle131${index}`}
+                        >
+                          <NFTsMarketPageColumnrectangle131
+                            className="bg-indigo-900 flex flex-1 flex-col gap-4 items-center justify-start p-6 sm:px-5 rounded-[50px] w-full"
+                            {...props}
+                          />
+                        </React.Fragment>
                       )
-                    }
-                  ></Input>
-                  <Button className="border-2 border-blue_gray-800 border-solid cursor-pointer font-bold font-ubuntu min-w-[246px] md:mt-0 mt-[18px] py-[21px] rounded-[32px] text-blue_gray-800 text-center text-lg tracking-[0.09px]">
-                    Connect Wallet
-                  </Button>
+                    )}
+                  </div>
                 </div>
               </div>
-              <div className="flex sm:flex-col flex-row sm:gap-10 gap-20 items-center justify-center md:ml-[0] ml-[261px] mt-[3px] w-auto sm:w-full">
+              <div className="flex flex-col gap-10 items-start justify-start w-auto md:w-full">
                 <Text
-                  className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                  size="txtUbuntuMedium16"
+                  className="capitalize text-gray-900 text-xl tracking-[0.10px] w-auto"
+                  size="txtUbuntuBold20Gray900"
                 >
-                  Home
+                  Categories
                 </Text>
-                <Text
-                  className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                  size="txtUbuntuMedium16"
-                >
-                  NFTs
-                </Text>
-                <Text
-                  className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                  size="txtUbuntuMedium16"
-                >
-                  Rewards
-                </Text>
-                <Text
-                  className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                  size="txtUbuntuMedium16"
-                >
-                  About Us
-                </Text>
-                <a
-                  href="javascript:"
-                  className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                >
-                  <Text size="txtUbuntuMedium16">FAQs</Text>
-                </a>
+                <div className="flex md:flex-col flex-row gap-10 items-start justify-start w-auto md:w-full">
+                  <List
+                    className="sm:flex-col flex-row gap-10 grid sm:grid-cols-1 grid-cols-3 w-[35%] md:w-full"
+                    orientation="horizontal"
+                  >
+                    {new Array(3).fill({}).map((props, index) => (
+                      <React.Fragment key={`Comp${index}`}>
+                        <Comp
+                          className="flex flex-col gap-4 items-center justify-start w-auto"
+                          {...props}
+                        />
+                      </React.Fragment>
+                    ))}
+                  </List>
+                  <Comp className="flex flex-col gap-4 items-center justify-start w-auto" />
+                  <List
+                    className="sm:flex-col flex-row gap-10 grid grid-cols-2 w-[21%] md:w-full"
+                    orientation="horizontal"
+                  >
+                    <Comp className="flex flex-col gap-4 items-center justify-start w-auto" />
+                    <Comp className="flex flex-col gap-4 items-center justify-start w-auto" />
+                  </List>
+                  <Comp className="flex flex-col gap-4 items-center justify-start w-auto" />
+                  <Comp className="flex flex-col gap-4 items-center justify-start w-auto" />
+                </div>
               </div>
-              <Line className="bg-blue_gray-800 h-[5px] md:ml-[0] ml-[239px] mr-[919px] mt-3 rounded-sm w-[8%]" />
+            </div>
+            <div className="flex flex-col gap-10 items-start justify-start w-auto md:w-full">
+              <Text
+                className="capitalize text-gray-900 text-xl tracking-[0.10px] w-auto"
+                size="txtUbuntuBold20Gray900"
+              >
+                Collections
+              </Text>
+              <div className="flex flex-col items-start justify-start w-auto md:w-full">
+                <div className="md:gap-5 gap-8 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-3 justify-center min-h-[auto] w-full">
+                  {new Array(9).fill({}).map((props, index) => (
+                    <React.Fragment
+                      key={`NFTsMarketPageColumnThirtyNine${index}`}
+                    >
+                      <NFTsMarketPageColumnThirtyNine
+                        className="bg-yellow-A400 flex flex-1 flex-col gap-6 items-center justify-start pb-[39px] rounded-[20px] w-full"
+                        {...props}
+                      />
+                    </React.Fragment>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
+          <div className="flex flex-col gap-10 items-start justify-start w-auto md:w-full">
+            <Text
+              className="capitalize text-gray-900 text-xl tracking-[0.10px] w-auto"
+              size="txtUbuntuBold20Gray900"
+            >
+              Top Collections
+            </Text>
+            <List
+              className="sm:flex-col flex-row md:gap-10 gap-28 grid md:grid-cols-1 grid-cols-2 justify-start w-auto md:w-full"
+              orientation="horizontal"
+            >
+              <div className="flex flex-col gap-10 items-start justify-start w-auto sm:w-full">
+                <NFTsMarketPageColumnone className="bg-white-A700_01 flex flex-col items-start justify-start p-[21px] sm:px-5 rounded-[30px] shadow-bs w-full" />
+                <NFTsMarketPageColumnone className="bg-white-A700_01 flex flex-col items-start justify-start p-[21px] sm:px-5 rounded-[30px] shadow-bs w-full" />
+                <NFTsMarketPageColumnone className="bg-white-A700_01 flex flex-col items-start justify-start p-[21px] sm:px-5 rounded-[30px] shadow-bs w-full" />
+                <NFTsMarketPageColumnone className="bg-white-A700_01 flex flex-col items-start justify-start p-[21px] sm:px-5 rounded-[30px] shadow-bs w-full" />
+                <NFTsMarketPageColumnone className="bg-white-A700_01 flex flex-col items-start justify-start p-[21px] sm:px-5 rounded-[30px] shadow-bs w-full" />
+              </div>
+              <div className="flex flex-col gap-10 items-start justify-start w-auto sm:w-full">
+                <NFTsMarketPageColumnone className="bg-white-A700_01 flex flex-col items-start justify-start p-[21px] sm:px-5 rounded-[30px] shadow-bs w-full" />
+                <NFTsMarketPageColumnone className="bg-white-A700_01 flex flex-col items-start justify-start p-[21px] sm:px-5 rounded-[30px] shadow-bs w-full" />
+                <NFTsMarketPageColumnone className="bg-white-A700_01 flex flex-col items-start justify-start p-[21px] sm:px-5 rounded-[30px] shadow-bs w-full" />
+                <NFTsMarketPageColumnone className="bg-white-A700_01 flex flex-col items-start justify-start p-[21px] sm:px-5 rounded-[30px] shadow-bs w-full" />
+              </div>
+            </List>
+          </div>
         </div>
-        <Text
-          className="capitalize md:ml-[0] ml-[133px] mt-[119px] md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.16px]"
-          size="txtUbuntuMedium32"
-        >
-          NFTs Listings
-        </Text>
-        <div className="flex flex-col items-center mt-[1230px] w-full">
-          <Footer className="bg-white-A700 flex items-center justify-center md:px-5 w-full" />
-        </div>
+        <Footer className="bg-white-A700 flex items-center justify-center mt-52 md:px-5 w-full" />
       </div>
     </>
   );

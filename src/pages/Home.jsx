@@ -11,10 +11,28 @@ const Home = () => {
       </p>
       <ul>
         <li>
-          <Link to="/landingpage">LandingPage</Link>
+          <Link to="/">LandingPage</Link>
+        </li>
+        <li>
+          <Link to="/faqspage">FAQsPage</Link>
+        </li>
+        <li>
+          <Link to="/signuppage">SignUpPage</Link>
+        </li>
+        <li>
+          <Link to="/signinpage">SignInPage</Link>
         </li>
         <li>
           <Link to="/nftsmarketpage">NFTsMarketpage</Link>
+        </li>
+        <li>
+          <Link to="/rewardspage">RewardsPage</Link>
+        </li>
+        <li>
+          <Link to="/aboutuspage">AboutUsPage</Link>
+        </li>
+        <li>
+          <Link to="/slide169one">Slide169One</Link>
         </li>
       </ul>
     </div>
