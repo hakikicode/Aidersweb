@@ -1,0 +1,6 @@
+
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/UbuntuBold.ttf"); font-family : "Ubuntu"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/UbuntuMedium.ttf"); font-family : "Ubuntu"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/UbuntuRegular.ttf"); font-family : "Ubuntu"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/SofiaSansRegular.ttf"); font-family : "Sofia Sans"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/UbuntuLight.ttf"); font-family : "Ubuntu"; font-weight : 300;  }
