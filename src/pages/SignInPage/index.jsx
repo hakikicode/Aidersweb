@@ -32,8 +32,8 @@ const SignInPagePage = () => {
       <div className="bg-white-A700 flex flex-col font-ubuntu items-center justify-start mx-auto w-full">
         <LandingPageHeader className="bg-white-A700_01 flex md:flex-col flex-row md:gap-10 items-center justify-between p-[26px] sm:px-5 w-full" />
         <div className="flex flex-col md:gap-10 gap-[104px] items-center justify-start max-w-[1102px] mt-36 mx-auto md:px-5 w-full">
-          <div className="flex flex-col md:gap-10 gap-[88px] items-center justify-start w-auto md:w-full">
-            <div className="flex flex-col gap-6 items-center justify-start w-auto md:w-full">
+          <div className="flex flex-col md:gap-10 gap-[88px] items-start justify-start w-auto md:w-full">
+            <div className="flex flex-col gap-6 items-start justify-start w-auto md:w-full">
               <Text
                 className="capitalize sm:text-4xl md:text-[38px] text-[40px] text-blue_gray-800 tracking-[0.20px] w-auto"
                 size="txtUbuntuMedium40"
@@ -50,27 +50,27 @@ const SignInPagePage = () => {
             </div>
             <div className="flex flex-col gap-8 items-start justify-start w-auto md:w-full">
               <Text
-                className="bg-white-A700_01 border border-blue_gray-800 border-solid justify-center sm:px-5 px-[35px] py-[25px] rounded-[30px] text-base text-gray-600 text-shadow-ts tracking-[0.08px] w-auto"
-                size="txtUbuntuMedium16"
+                className="bg-white-A700_01 border border-blue_gray-800 border-solid justify-center sm:px-5 px-[35px] py-[25px] rounded-[30px] text-base text-gray-500 text-shadow-ts tracking-[0.08px] w-auto"
+                size="txtUbuntuMedium16Gray500"
               >
                 Username
               </Text>
               <Text
-                className="bg-white-A700_01 border border-blue_gray-800 border-solid justify-center sm:px-5 px-[35px] py-[25px] rounded-[30px] text-base text-gray-600 text-shadow-ts tracking-[0.08px] w-auto"
-                size="txtUbuntuMedium16"
+                className="bg-white-A700_01 border border-blue_gray-800 border-solid justify-center sm:px-5 px-[35px] py-[25px] rounded-[30px] text-base text-gray-500 text-shadow-ts tracking-[0.08px] w-auto"
+                size="txtUbuntuMedium16Gray500"
               >
                 {login?.data?.email}
               </Text>
               <div className="bg-white-A700_01 border border-blue_gray-800 border-solid flex flex-row md:gap-10 items-center justify-between p-[23px] sm:px-5 rounded-[30px] shadow-bs2 w-full">
                 <Text
-                  className="ml-[49px] text-base text-gray-600 tracking-[0.08px]"
-                  size="txtUbuntuMedium16"
+                  className="ml-[49px] text-base text-gray-500 tracking-[0.08px]"
+                  size="txtUbuntuMedium16Gray500"
                 >
                   Password
                 </Text>
                 <Img
                   className="h-6 mr-[49px] w-6"
-                  src="images/img_cihide.svg"
+                  src="images/img_cihide_gray_500.svg"
                   alt="cihide"
                 />
               </div>
@@ -96,8 +96,8 @@ const SignInPagePage = () => {
             <div className="flex flex-col gap-14 items-center justify-start w-auto sm:w-full">
               <div className="flex flex-col gap-4 items-center justify-center w-auto">
                 <Text
-                  className="text-base text-gray-600 tracking-[0.08px] w-auto"
-                  size="txtUbuntuMedium16"
+                  className="text-base text-gray-500 tracking-[0.08px] w-auto"
+                  size="txtUbuntuMedium16Gray500"
                 >
                   OR
                 </Text>
@@ -125,14 +125,17 @@ const SignInPagePage = () => {
                     </div>
                     <Text
                       className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                      size="txtUbuntuMedium16Gray900"
+                      size="txtUbuntuMedium16"
                     >
                       Apple
                     </Text>
                   </div>
                 </div>
                 <div className="bg-white-A700_01 border border-blue_gray-800 border-solid flex flex-col h-[100px] items-center justify-start p-[18px] rounded-[50%] w-[100px]">
-                  <Comp className="flex flex-col gap-2 items-center justify-start w-auto" />
+                  <Comp
+                    className="flex flex-col gap-2 items-center justify-start w-auto"
+                    artwork="Google"
+                  />
                 </div>
                 <div className="bg-white-A700_01 border border-blue_gray-800 border-solid flex flex-col h-[100px] items-center justify-start p-3.5 rounded-[50%] w-[100px]">
                   <div className="flex flex-col gap-2 items-center justify-start my-1 w-auto">
@@ -145,7 +148,7 @@ const SignInPagePage = () => {
                     </div>
                     <Text
                       className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                      size="txtUbuntuMedium16Gray900"
+                      size="txtUbuntuMedium16"
                     >
                       Facebook
                     </Text>
