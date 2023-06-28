@@ -91,11 +91,14 @@ const LandingPagePage = () => {
                   </>
                 </Text>
               </div>
-              <a
-                href="javascript:"
-                className="text-2xl md:text-[22px] text-blue_gray-800 sm:text-xl tracking-[0.12px] w-auto"
-              >
-                <Text size="txtUbuntuBold24">LEARN MORE</Text>
+              <a className="text-2xl md:text-[22px] text-blue_gray-800 sm:text-xl tracking-[0.12px] w-auto">
+                <Text
+                  className="common-pointer"
+                  size="txtUbuntuBold24"
+                  onClick={() => navigate("/faqspage")}
+                >
+                  LEARN MORE
+                </Text>
               </a>
             </div>
             <Button className="border-2 border-blue_gray-800 border-solid cursor-pointer font-bold py-[17px] rounded-[28px] text-blue_gray-800 text-center text-lg tracking-[0.09px] w-[233px]">

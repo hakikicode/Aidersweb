@@ -14,13 +14,30 @@ const Home = () => {
           <Link to="/">LandingPage</Link>
         </li>
         <li>
+          <Link to="/signupinoverlay">SignupinOverlay</Link>
+        </li>
+        <li>
           <Link to="/faqspage">FAQsPage</Link>
+        </li>
+        <li>
+          <Link to="/profilepagepersonaldata">ProfilePagePersonalData</Link>
+        </li>
+        <li>
+          <Link to="/profilepagepassword">ProfilePagePassword</Link>
+        </li>
+        <li>
+          <Link to="/profilepageverificationstatus">
+            ProfilePageVerificationstatus
+          </Link>
+        </li>
+        <li>
+          <Link to="/tradingpage">TradingPage</Link>
         </li>
         <li>
           <Link to="/signuppage">SignUpPage</Link>
         </li>
         <li>
-          <Link to="/signinpage">SignInPage</Link>
+          <Link to="/homepage">HomePage</Link>
         </li>
         <li>
           <Link to="/nftsmarketpage">NFTsMarketpage</Link>
@@ -30,6 +47,9 @@ const Home = () => {
         </li>
         <li>
           <Link to="/aboutuspage">AboutUsPage</Link>
+        </li>
+        <li>
+          <Link to="/signinpage">SignInPage</Link>
         </li>
         <li>
           <Link to="/slide169one">Slide169One</Link>
