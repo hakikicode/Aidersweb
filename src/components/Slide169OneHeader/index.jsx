@@ -24,7 +24,7 @@ const Slide169OneHeader = (props) => {
             <div className="bg-white-A700_01 border border-gray-900 border-solid flex flex-col items-start justify-start sm:px-5 px-8 py-[7px] rounded-[25px] w-auto">
               <div className="flex flex-row gap-[72px] h-9 md:h-auto items-center justify-start w-[291px]">
                 <Text
-                  className="text-gray-600 text-sm tracking-[0.07px] w-auto"
+                  className="text-gray-500 text-sm tracking-[0.07px] w-auto"
                   size="txtUbuntuMedium14"
                 >
                   {props?.searchforanythiOne}
@@ -44,7 +44,7 @@ const Slide169OneHeader = (props) => {
                 <div className="flex flex-col gap-3 items-center justify-start w-auto">
                   <Text
                     className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                    size="txtUbuntuMedium16Gray900"
+                    size="txtUbuntuMedium16"
                   >
                     {props?.home}
                   </Text>
@@ -53,7 +53,7 @@ const Slide169OneHeader = (props) => {
                 <div className="flex flex-col gap-3 items-center justify-start w-auto">
                   <Text
                     className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                    size="txtUbuntuMedium16Gray900"
+                    size="txtUbuntuMedium16"
                   >
                     {props?.nfts}
                   </Text>
@@ -62,9 +62,9 @@ const Slide169OneHeader = (props) => {
                 <div className="flex flex-col gap-3 items-center justify-start w-auto">
                   <Text
                     className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                    size="txtUbuntuMedium16Gray900"
+                    size="txtUbuntuMedium16"
                   >
-                    {props?.rewards}
+                    {props?.trades}
                   </Text>
                   <Line className="bg-blue_gray-800 h-[5px] rounded-sm w-full" />
                 </div>
@@ -76,7 +76,7 @@ const Slide169OneHeader = (props) => {
                 <div className="flex flex-col gap-2.5 items-center justify-start w-auto">
                   <Text
                     className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                    size="txtUbuntuMedium16Gray900"
+                    size="txtUbuntuMedium16"
                   >
                     {props?.aboutus}
                   </Text>
@@ -85,7 +85,7 @@ const Slide169OneHeader = (props) => {
                 <div className="flex flex-col gap-2.5 items-center justify-start w-auto">
                   <Text
                     className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                    size="txtUbuntuMedium16Gray900"
+                    size="txtUbuntuMedium16"
                   >
                     {props?.faqs}
                   </Text>
@@ -104,7 +104,7 @@ const Slide169OneHeader = (props) => {
             />
           </Button>
           <Button className="border-2 border-blue_gray-800 border-solid cursor-pointer font-bold font-ubuntu min-w-[214px] py-[17px] rounded-[28px] text-blue_gray-800 text-center text-lg tracking-[0.09px]">
-            {props?.connectwallettext}
+            {props?.connectWallet}
           </Button>
         </div>
       </div>
@@ -117,10 +117,10 @@ Slide169OneHeader.defaultProps = {
   searchforanythiOne: "Search for anything here",
   home: "Home",
   nfts: "NFTs",
-  rewards: "Rewards",
+  trades: "Trades",
   aboutus: "About Us",
   faqs: "FAQs",
-  connectwallettext: "Connect Wallet",
+  connectWallet: "Connect Wallet",
 };
 
 export default Slide169OneHeader;

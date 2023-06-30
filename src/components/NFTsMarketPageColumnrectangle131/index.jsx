@@ -16,7 +16,7 @@ const NFTsMarketPageColumnrectangle131 = (props) => {
             className="capitalize text-base text-white-A700_01 tracking-[0.08px] w-auto"
             size="txtUbuntuMedium16WhiteA70001"
           >
-            {props?.username}
+            {props?.tokensnft}
           </Text>
           <div className="flex flex-col items-start justify-start w-auto">
             <div className="flex flex-row gap-3 items-center justify-center w-[164px]">
@@ -29,31 +29,31 @@ const NFTsMarketPageColumnrectangle131 = (props) => {
               </div>
               <Text
                 className="capitalize text-sm text-white-A700_01 tracking-[0.07px] w-auto"
-                size="txtUbuntuRegular14"
+                size="txtUbuntuRegular14WhiteA70001"
               >
-                {props?.usertitle}
+                {props?.thelordofnfts}
               </Text>
             </div>
             <div className="flex flex-row gap-24 items-end justify-start w-auto">
               <div className="flex flex-col items-center justify-start w-[42%]">
                 <Button className="bg-blue_gray-800 cursor-pointer font-bold font-ubuntu min-w-[113px] py-[17px] rounded-[28px] text-center text-lg text-white-A700_01 tracking-[0.09px]">
-                  {props?.buybutton}
+                  {props?.buy}
                 </Button>
               </div>
               <div className="flex flex-col gap-[22px] items-center justify-start w-auto">
                 <div className="flex flex-col items-center justify-start">
                   <Text
                     className="capitalize text-sm text-white-A700_01 tracking-[0.07px] w-auto"
-                    size="txtUbuntuRegular14"
+                    size="txtUbuntuRegular14WhiteA70001"
                   >
-                    {props?.pricelabel}
+                    {props?.price}
                   </Text>
                 </div>
                 <Text
                   className="capitalize text-lg text-yellow-A400 tracking-[0.09px] w-auto"
                   size="txtUbuntuBold18"
                 >
-                  {props?.pricevalue}
+                  {props?.priceOne}
                 </Text>
               </div>
             </div>
@@ -65,11 +65,11 @@ const NFTsMarketPageColumnrectangle131 = (props) => {
 };
 
 NFTsMarketPageColumnrectangle131.defaultProps = {
-  username: "CryptoFish",
-  usertitle: "The Lord of NFTs",
-  buybutton: "Buy",
-  pricelabel: "Price:",
-  pricevalue: "$10000",
+  tokensnft: "CryptoFish",
+  thelordofnfts: "The Lord of NFTs",
+  buy: "Buy",
+  price: "Price:",
+  priceOne: "$10000",
 };
 
 export default NFTsMarketPageColumnrectangle131;

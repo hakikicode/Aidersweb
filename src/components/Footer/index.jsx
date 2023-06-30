@@ -38,7 +38,7 @@ const Footer = (props) => {
                   <ul className="flex flex-col gap-2 items-start justify-start w-auto md:w-full common-column-list">
                     <li>
                       <Text
-                        className="common-pointer text-gray-600 text-sm tracking-[0.04px]"
+                        className="common-pointer text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                         onClick={() => navigate("/nftsmarketpage")}
                       >
@@ -47,7 +47,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="common-pointer text-gray-600 text-sm tracking-[0.04px]"
+                        className="common-pointer text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                         onClick={() => navigate("/rewardspage")}
                       >
@@ -56,7 +56,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Tasks
@@ -64,7 +64,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Converters
@@ -72,7 +72,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Bid Market
@@ -90,7 +90,7 @@ const Footer = (props) => {
                   <ul className="flex flex-col gap-2 items-start justify-start w-auto md:w-full common-column-list">
                     <li>
                       <Text
-                        className="common-pointer text-center text-gray-600 text-sm tracking-[0.04px]"
+                        className="common-pointer text-center text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                         onClick={() => navigate("/aboutuspage")}
                       >
@@ -99,7 +99,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-center text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-center text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Branding
@@ -107,7 +107,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-center text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-center text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Newsroom
@@ -115,7 +115,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-center text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-center text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Partnerships
@@ -123,7 +123,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-center text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-center text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Charity
@@ -141,7 +141,7 @@ const Footer = (props) => {
                   <ul className="flex flex-col gap-2 items-start justify-start w-auto md:w-full common-column-list">
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Help center
@@ -149,7 +149,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Contact us
@@ -157,7 +157,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Privacy & Terms
@@ -165,7 +165,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Safety information
@@ -173,7 +173,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Sitemap
@@ -191,7 +191,7 @@ const Footer = (props) => {
                   <ul className="flex flex-col gap-2 items-start justify-start w-auto md:w-full common-column-list">
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Advertisers
@@ -199,7 +199,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Content Creators
@@ -207,7 +207,7 @@ const Footer = (props) => {
                     </li>
                     <li>
                       <Text
-                        className="text-gray-600 text-sm tracking-[0.04px]"
+                        className="text-colors text-sm tracking-[0.04px]"
                         size="txtUbuntuRegular14Gray600"
                       >
                         Publishers
@@ -250,17 +250,17 @@ const Footer = (props) => {
                 </div>
               </div>
               <div className="flex flex-row gap-4 items-end justify-center w-auto">
-                <Img className="h-6 w-6" src="images/img_plus.svg" alt="plus" />
+                <Img className="h-6 w-6" src="defaultNoData.png" alt="plus" />
                 <div className="flex flex-col h-5 items-end justify-start w-5">
                   <Img
                     className="h-3.5"
-                    src="images/img_twitter.svg"
+                    src="defaultNoData.png"
                     alt="twitter"
                   />
                 </div>
                 <Img
                   className="h-5 md:h-auto object-cover w-5"
-                  src="images/img_socialmedialogo.png"
+                  src="defaultNoData.png"
                   alt="socialmedialogo"
                 />
               </div>

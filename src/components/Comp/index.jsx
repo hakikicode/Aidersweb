@@ -15,13 +15,13 @@ const Comp = (props) => {
           className="capitalize text-base text-gray-900 tracking-[0.08px] w-auto"
           size="txtUbuntuRegular16Gray900"
         >
-          Artwork
+          {props?.artwork}
         </Text>
       </div>
     </>
   );
 };
 
-Comp.defaultProps = {};
+Comp.defaultProps = { artwork: "Artwork" };
 
 export default Comp;
