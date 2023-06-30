@@ -1,16 +1,12 @@
 import React from "react";
 
-import { useNavigate } from "react-router-dom";
-
-import { Button, Img, Line, Text } from "components";
+import { Button, Img, Text } from "components";
 
 const Header = (props) => {
-  const navigate = useNavigate();
-
   return (
     <>
       <header className={props.className}>
-        <div className="flex md:flex-col flex-row gap-12 items-center justify-start mb-[11px] ml-24 md:ml-[0] md:mt-0 mt-10 w-auto md:w-full">
+        <div className="flex md:flex-col flex-row gap-12 items-center justify-start mb-[26px] ml-24 md:ml-[0] md:mt-0 mt-10 w-auto md:w-full">
           <div className="flex flex-row gap-2 items-center justify-start w-auto">
             <Img
               className="h-[74px] w-[74px]"
@@ -28,7 +24,7 @@ const Header = (props) => {
             <div className="bg-white-A700_01 border border-gray-900 border-solid flex flex-col items-start justify-start sm:px-5 px-8 py-[7px] rounded-[25px] w-auto">
               <div className="flex flex-row gap-[72px] h-9 md:h-auto items-center justify-start w-[291px]">
                 <Text
-                  className="text-gray-600 text-sm tracking-[0.07px] w-auto"
+                  className="text-gray-500 text-sm tracking-[0.07px] w-auto"
                   size="txtUbuntuMedium14"
                 >
                   Search for anything here
@@ -44,54 +40,47 @@ const Header = (props) => {
               <div className="flex flex-col items-center justify-start w-auto">
                 <Text
                   className="text-base text-gray-900 tracking-[0.08px] w-auto"
-                  size="txtUbuntuMedium16Gray900"
+                  size="txtUbuntuMedium16"
                 >
                   Home
                 </Text>
               </div>
               <div className="flex flex-col items-center justify-start w-auto">
                 <Text
-                  className="common-pointer text-base text-gray-900 tracking-[0.08px] w-auto"
-                  size="txtUbuntuMedium16Gray900"
-                  onClick={() => navigate("/nftsmarketpage")}
+                  className="text-base text-gray-900 tracking-[0.08px] w-auto"
+                  size="txtUbuntuMedium16"
                 >
                   NFTs
                 </Text>
               </div>
               <div className="flex flex-col items-center justify-start w-auto">
                 <Text
-                  className="common-pointer text-base text-gray-900 tracking-[0.08px] w-auto"
-                  size="txtUbuntuMedium16Gray900"
-                  onClick={() => navigate("/rewardspage")}
+                  className="text-base text-gray-900 tracking-[0.08px] w-auto"
+                  size="txtUbuntuMedium16"
                 >
-                  Rewards
+                  Trades
                 </Text>
               </div>
-              <div className="flex flex-col gap-2.5 items-center justify-start w-auto">
+              <div className="flex flex-col items-center justify-start w-auto">
                 <Text
-                  className="common-pointer text-base text-gray-900 tracking-[0.08px] w-auto"
-                  size="txtUbuntuMedium16Gray900"
-                  onClick={() => navigate("/aboutuspage")}
+                  className="text-base text-gray-900 tracking-[0.08px] w-auto"
+                  size="txtUbuntuMedium16"
                 >
                   About Us
                 </Text>
-                <Line className="bg-blue_gray-800 h-[5px] rounded-sm w-full" />
               </div>
               <div className="flex flex-col items-center justify-start w-auto">
-                <a className="text-base text-gray-900 tracking-[0.08px] w-auto">
-                  <Text
-                    className="common-pointer"
-                    size="txtUbuntuMedium16Gray900"
-                    onClick={() => navigate("/faqspage")}
-                  >
-                    FAQs
-                  </Text>
-                </a>
+                <Text
+                  className="text-base text-gray-900 tracking-[0.08px] w-auto"
+                  size="txtUbuntuMedium16"
+                >
+                  FAQs
+                </Text>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex sm:flex-col flex-row gap-6 items-center justify-start mb-[46px] md:ml-[0] ml-[161px] mr-24 md:mt-0 mt-[77px] w-auto">
+        <div className="flex sm:flex-col flex-row gap-6 items-center justify-start mb-[46px] md:ml-[0] ml-[196px] mr-24 md:mt-0 mt-[77px] w-auto">
           <Button className="border-2 border-blue_gray-800 border-solid flex h-14 items-center justify-center p-4 rounded-[20px] w-14">
             <Img
               className="h-6"
